@@ -10,6 +10,9 @@ Se empezó con el logueo indicando que se requería un usuario y contraseña par
 
 Ademas de eso, se va a pedir un login con validación atraves de un token y se pide que permita crear usuarios (ya no se va a realizar) productos y carritos de compras. Para esto se utilizaran el consumo de API externa.
 
+Usuario:emilys
+contraseña:emilyspass
+
 Se ingresa con usuario y contraseña, para poder navegar entre sus items y asi acceder a las distintas listas que contiene la app.
 
 Dentro de lo que se hizo se trabajó: diseños con bootstrap, css y javascript para la conexión de la api y mostrar los datos contenidos en ella.
