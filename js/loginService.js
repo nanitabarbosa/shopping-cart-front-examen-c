@@ -1,5 +1,6 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
+document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault();
+
     const user = document.getElementById('user').value.trim();
     const password = document.getElementById('password').value.trim();
 
@@ -8,7 +9,8 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         return;
     }
 
-    console.log('peTicion');
+    console.log('Intentando login...');
+    localStorage.removeItem('token');
 
     fetch('https://dummyjson.com/auth/login', {
         method: 'POST',
@@ -19,24 +21,34 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
             expiresInMins: 30
         }),
     })
-        .then(res => {
-            console.log('Respuesta recibida:', res);
-            return res.json();
-        })
+        .then(res => res.json())
         .then(data => {
-            console.log('Datos del login:', data);
-            window.location.href = 'admin/dashboard.html';
+            console.log('Datos recibidos del login:', data);
+
+            const token = data.token || data.accessToken;
+
+            if (!token) {
+                alertBuilder('danger', 'Nombre de usuario o contraseña incorrectos.');
+                return;
+            }
+
+            localStorage.setItem('token', token);
+            alertBuilder('success', 'Inicio de sesión exitoso.');
+
+            setTimeout(() => {
+                window.location.href = 'admin/dashboard.html';
+            }, 1000);
         })
         .catch(error => {
             console.error('Error al hacer login:', error);
+            alertBuilder('danger', 'Error inesperado al iniciar sesión.');
         });
-
 });
 
 function alertBuilder(alertType, message) {
     const alert = `<div class="alert alert-${alertType} alert-dismissible fade show" role="alert">
-    ${message}
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
-  </div>`;
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+    </div>`;
     document.getElementById('mensaje').innerHTML = alert;
 }

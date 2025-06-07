@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>App Devlop - dashboard</title>
 
 </head>
@@ -47,6 +47,13 @@
                     </div>
                     <div class="card-body">
                         <div id="info"><h1>Bienvenid@ a nuestra app Diva Rosé</h1>
+                            <tr>
+                                <h1>API DummyJSON</h1>
+                                <p>👥 <strong>Integrantes:</strong> Mariana Barbosa (192338), Tatiana Arengas (192421)</p>
+                                <p>📝 Se desarrolló una aplicación web que simula una boutique utilizando la API DummyJSON. El sistema implementa funcionalidades clave como autenticación de usuarios, gestión de productos, visualización de carritos y manejo de datos de usuario.</p>
+                                <p>🔐 El acceso comienza con el logueo de usuario, solicitando usuario y contraseña. Una vez autenticado, se habilita el acceso a las demás secciones: usuarios, productos y carrito.</p>
+                                <p>💡 Cada sección presenta una lista y una vista detallada de cada elemento mediante la opción "Ver".</p>
+                            </tr>
                         </div>
                     </div>
                 </div>
@@ -54,18 +61,19 @@
         </div>
         <div class="row">
             <div class="col">
-                <p class="fw-lighter text-center">%copy: Copy rigth 2025</p>
+                <p class="fw-lighter text-center"> &copy; Todos los derechos reservados</p>
             </div>
         </div>
 
 
         <div id="viewModal"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="../js/dashboard_service.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="../js/dashboard_service.js"></script>
         <script src="../js/cartService.js"></script>
-    <script src="../js/productService.js"></script>
-    <script src="../js/userService.js"></script>
+        <script src="../js/productService.js"></script>
+        <script src="../js/userService.js"></script>
+        <script src="../js/loginService.js"></script>
 
 </body>
 </html>
