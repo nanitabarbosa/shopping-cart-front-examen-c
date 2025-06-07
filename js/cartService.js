@@ -197,12 +197,12 @@ function saveToCart() {
         .then((res) => res.json())
         .then((data) => {
             console.log("Respuesta del servidor:", data);
-            document.getElementById('info').innerHTML = <h3 class="text-success">Producto agregado al carrito correctamente</h3>;
+            document.getElementById('info').innerHTML = `<h3 class="text-success">Producto agregado al carrito correctamente</h3>`;
             const modal = bootstrap.Modal.getInstance(document.getElementById('modalUser'));
             modal.hide();
         })
         .catch((error) => {
             console.error("Error al agregar al carrito:", error);
-            document.getElementById('info').innerHTML = <h3 class="text-danger">Error al agregar producto al carrito</h3>;
+            document.getElementById('info').innerHTML = `<h3 class="text-danger">Error al agregar producto al carrito</h3>`;
         });
 }
