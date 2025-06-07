@@ -24,9 +24,18 @@ de igual forma, como dicho anteriormente, se creo un boton para agregar usuarios
 
 ![image](https://github.com/user-attachments/assets/26d78b80-3983-4606-b461-b39137c40c54)
 
-![image](https://github.com/user-attachments/assets/998f5a97-40fc-4ffd-9037-e8c66897c00a)
+![image](https://github.com/user-attachments/assets/2d66bbad-62cb-403e-99c1-93cedd17c1b9)
 
-![image](https://github.com/user-attachments/assets/64034f66-5f53-4a93-914f-8910f8d5a54e)
+![image](https://github.com/user-attachments/assets/40b97a49-5873-472b-832c-2bb75d2185ae)
+
+![image](https://github.com/user-attachments/assets/2ff2ab84-fc2c-47d3-a04d-ef78b4b21507)
+![image](https://github.com/user-attachments/assets/eda0563e-1c75-4c62-883c-1ff542fbd9f5)
+![image](https://github.com/user-attachments/assets/af20e235-db2f-409d-a35c-cb085ece50e5)
+
+
+
+
+
 
 
 
